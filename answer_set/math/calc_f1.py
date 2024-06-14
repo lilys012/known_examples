@@ -5,6 +5,7 @@ import sys
 import requests
 from tqdm import tqdm 
 import random
+import os
 
 exp_log = []
 invalids = []
@@ -71,6 +72,7 @@ for i in range(n_sets):
         "prompt" : prompt
     }
 
+os.makedirs("../../jsons/math_experiments", exist_ok=True)
 
 f = open(f"../../jsons/math_experiments/gen_score.json", "w")
 json.dump(exp_log, f, indent=4)

@@ -32,7 +32,7 @@ for filepath, dest_filepath in zip(filepaths, dest_filepaths):
         formatted_entry["answers"] = answer_list
         formatted_data.append(formatted_entry)
 
-    if dest_filepath == "train_dataset.json"
+    if dest_filepath == "train_dataset.json":
         new_train = []
         for example in formatted_data:
             if example not in new_train:

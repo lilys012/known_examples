@@ -35,6 +35,8 @@ def example_to_str(example):
             str_rep += " | "
     return str_rep
 
+os.makedirs("jsons/"+data_name+"/simcse_scores", exist_ok=True)
+
 train_embeddings = []
 for example in tqdm(train_dataset):
     example_str = "Query: " + example["question"]

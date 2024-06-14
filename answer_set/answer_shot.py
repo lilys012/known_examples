@@ -81,7 +81,7 @@ for set_idx in range(len(answer_set)):
 
     save_path = "../jsons/"+data_name+"_experiments/answer_set/"+strategy
     os.makedirs(save_path, exist_ok=True)
-    f = open(save_path+"/"+split+"_answer_set_"+str(set_idx+1)".json", "w")
+    f = open(save_path+"/"+split+"_answer_set_"+str(set_idx+1)+".json", "w")
     json.dump(experiment_log, f, indent=4)
     f.close()
 

@@ -4,6 +4,7 @@ from transformers import LlamaTokenizer, LlamaForCausalLM
 import sys
 import requests
 from tqdm import tqdm 
+import os
 
 port = sys.argv[1]
 
@@ -39,6 +40,7 @@ for i in tqdm(range(len(train_dataset))):
     example_log["output_text"] = output_text
     experiment_log.append(example_log)
 
+os.makedirs("../../jsons/math_experiments", exist_ok=True)
 f = open(f"../../jsons/math_experiments/initial_gen.json", "w")
 json.dump(experiment_log, f, indent=4)
 f.close()
