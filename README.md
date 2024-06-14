@@ -1,6 +1,6 @@
 # Known vs Unknown Examples
 
-This is the repository for the paper [Crafting In-context Examples according to LMs’ Parametric Knowledge](https://lilys012.github.io/assets/pdf/craftingIE.pdf) (NAACL 2024 Findings).
+This is the repository for the paper [Crafting In-context Examples according to LMs’ Parametric Knowledge](https://arxiv.org/pdf/2311.09579) (NAACL 2024 Findings).
 
 ## [/dataset](/dataset)
 
